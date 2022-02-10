@@ -1,0 +1,5 @@
+dist/
+build/
+*.spec
+renamer.xlsx
+__pycache__/
