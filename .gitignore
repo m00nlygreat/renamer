@@ -3,3 +3,4 @@ build/
 *.spec
 renamer.xlsx
 __pycache__/
+compile.bat

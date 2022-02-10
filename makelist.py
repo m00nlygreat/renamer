@@ -63,42 +63,6 @@ for row in ws.iter_rows(min_row=1, max_row=1):
     for cell in row:
         cell.font = b
 
-# # 안내문
-
-# ws.column_dimensions['G'].width = 4
-# ws.column_dimensions['H'].width = 60
-
-# t = [
-#         "1. 파일",
-#         "",
-#         "",
-#         "2. 폴더",
-#         "",
-#         "3. 삭제",
-#         "",
-#         "",
-#         "",
-#         "만든이.",
-#         "공대적 문과생",
-#         "moonlygreat@gmail.com",
-#         "https://velog.io/@m00nlygreat"
-#     ]
-# t2 = [
-#         "",
-#         "- 이름을 변경하면 이름이 변경됩니다.",
-#         "- 경로를 변경하면 파일이 이동됩니다. 폴더가 없으면 만듭니다.",
-#         "",
-#         "- 경로를 변경하면 폴더를 이동합니다. 폴더가 없으면 만듭니다.",
-#         "",
-#         "- 경로와 이름을 모두 비워두면 파일이든 폴더든 삭제합니다.",
-#         "- 주의: 복구 불가. 폴더를 지우면 안의 파일도 모두 삭제됨"
-#         ]
-# for i,text in enumerate(t):
-#     ws['G'][i].value = text
-
-# for i,text in enumerate(t2):
-#     ws['H'][i].value = text
-
 # 저장
 
 try:
