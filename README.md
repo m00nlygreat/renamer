@@ -1,6 +1,6 @@
 # Renamer
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7516bf66-095b-4ce6-b79c-2d27aa84694a/Untitled.png)
+![image](https://user-images.githubusercontent.com/29726529/153334735-0f3e1dca-7c0b-4c36-b8a8-092407ae9a4d.png)
 
 엑셀을 활용해 대량 파일명 변경/이동 등을 수행하는 프로그램. 파이썬과 `pyinstaller`로 제작됨.
 
