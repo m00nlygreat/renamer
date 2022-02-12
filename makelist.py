@@ -5,6 +5,8 @@ from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Font
 import sys
 
+VERSION = "1.1"
+
 if sys.argv[1:]:
     self = ' '.join(sys.argv[1:])
 else:

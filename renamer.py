@@ -5,6 +5,8 @@ from openpyxl import load_workbook
 from shutil import rmtree
 import sys
 
+VERSION = "1.1"
+
 args = sys.argv[1:]
 
 try:
@@ -17,8 +19,14 @@ ws = wb['rename']
 names = []
 rows = list(ws.rows)[1:]
 for row in rows:
-    before = row[1].value+row[2].value if row[2].value else row[1].value
-    after = row[3].value+row[4].value if row[4].value else row[3].value
+    before_path = row[1].value
+    before_name = row[2].value
+    after_path = row[3].value
+    after_name = row[4].value
+    if after_path[-1] != '\\':
+        after_path += '\\'
+    before = before_path + before_name if before_name else before_path
+    after = after_path + after_name if after_name else after_path
     if '-u' in args:
         names.append([after, before])
     else:
