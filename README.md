@@ -32,11 +32,20 @@
 
 ### 팁
 
-1. `makelist` 에 명령줄 인수(commandline argument)로 경로를 입력하면, 해당 경로와 하위 폴더들의 파일 목록을 현재 위치에 생성한다.
-2. `renamer` 의 명령줄 인수로 `-u` 를 입력하면 `renamer.xlsx` 에 기입된 내용을 역방향으로 실행한다. 즉 작업을 되돌리고 싶을 때 사용.
+1. `makelist`에 명령줄 인수(commandline argument)로 경로를 입력하면, 해당 경로와 하위 폴더들의 파일 목록을 현재 위치에 생성한다.
+2. `renamer`에 경로 또는 xlsx 파일을 명령줄 인수로 주면, 해당 경로의 `renamer.xlsx` 또는 제공된 xlsx 파일을 근거로 작업을 수행한다.
+3. `renamer` 의 명령줄 인수로 `-u` 를 입력하면 `renamer.xlsx` 에 기입된 내용을 역방향으로 실행한다. 즉 작업을 되돌리고 싶을 때 사용.
     1. 삭제한 파일/폴더는 복구 안됨.
 
 
 ### 부끄러운 점
 
 1. `pyinstaller`를 사용한 단일 파일이 Windows Defender에 의해 진단되는 경우가 있다. 예외 허용해줘야 합니다.
+
+### Version history
+
+- ver 1.0:
+    릴리즈
+- ver 1.1:
+    `renamer.exe`가 외부의 경로, 또는 `renamer.xlsx` 파일을 읽을 수 있도록 명령줄 인수 지원.
+    엑셀을 읽어들일 때, 수식이 아닌 값을 기준으로 읽어들이도록 변경.    
